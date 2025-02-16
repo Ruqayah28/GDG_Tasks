@@ -14,14 +14,14 @@ public class Task22 {
     public static void main(String[] args) {
        
        
-        String numberOfChars = JOptionPane.showInputDialog("Enter your name");
+       String name = JOptionPane.showInputDialog("Enter your name");
         
        
-        if (numberOfChars == null || numberOfChars.trim().isEmpty()) {
+        if (name == null || name.trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "No name entered.", "Error", JOptionPane.ERROR_MESSAGE);
 
         } else {
-               int count = numberOfChars.length();   
-               JOptionPane.showMessageDialog(null, numberOfChars + " has " + count + " characters.", "Character Count", JOptionPane.PLAIN_MESSAGE);
+               int numberOfChars = name.length();   
+               JOptionPane.showMessageDialog(null, name + " has " + numberOfChars + " characters.", "Character Count", JOptionPane.PLAIN_MESSAGE);
 
         }}}
